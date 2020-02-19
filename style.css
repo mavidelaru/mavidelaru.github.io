@@ -53,18 +53,38 @@ nav img {
 
 /**** Intro ****/
 
-#intro{
-	background-color: rgba(120,216,218,0.9);
+/**** Intro ****/
+
+#intro
+{
+	background-color: #f8f8f8;
 	height: 85vh;
-	max-height: 100vh;
+    max-height: 100vh;
+    max-width: 100%;
 	justify-content: center;
-	align-items: center
+    align-items: center;
+    overflow: hidden;
+}
+
+#flex-intro{
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#position-text{
+    clear: both;
+    position: relative;
+    z-index: 2;
+    flex-flow: column   
 }
 
 h1{
-	font-family: 'Poppins', sans-serif;
+    font-family: 'Chonburi', cursive;
 	line-height: 60px;
-    font-size: 55px;
+    font-size: 55px; 
 }
 
 h2{
@@ -79,6 +99,7 @@ p{
     font-size: 16px;
     font-family: lato, sans-serif;
     font-weight: 300;
+    margin: 0% 20% 0% 20%;
 	
 }
 
@@ -127,6 +148,121 @@ button:hover{
   border-color: white;
   color: white;
 }
+
+
+
+
+
+
+
+
+/*Manchas flotando*/
+
+/*		filter: drop-shadow(0 0 0.75rem rgba(0,0,0,0.3));
+*/
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+@keyframes float-between {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+
+@keyframes float-between {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(30px);
+	}
+	100% {
+		transform: translatey(-0px);
+	}
+}
+
+
+
+#stain-container{
+    float: left;
+    height: 10px;
+  
+}
+
+/*General manchas arriba*/
+
+.stain {
+	transform: translatey(0px);
+    float: right;
+}
+
+img { 
+    width: 100%;  
+}
+
+
+#up-yellow-stain{
+    width: 90vh;
+    margin: -13rem 7rem 0rem 60rem;
+    animation: float-between 5s ease-in-out infinite;
+}
+
+#up-pink-stain{
+    width: 50vh;
+    margin: -30rem 6rem 0rem 0rem;
+    animation: float 7s ease-in-out infinite;
+}
+
+#up-blue-stain{
+    width: 40vh;
+    margin: -14rem 15% 0% 0vw;
+    animation: float 6s ease-in-out infinite;
+}
+
+
+
+
+#down-yellow-stain{
+    width: 60vh;
+    margin: -20rem 90% 0% 0rem;
+    animation: float-between 3s ease-in-out infinite; 
+}
+
+#down-blue-stain{
+    width: 70vh;
+    margin: -30rem 100rem 0rem -20rem;
+    animation: float 6s ease-in-out infinite;
+     
+}
+
+#down-pink-stain{
+    width: 50vh;
+    margin: -10rem 90rem 0% -40rem;
+    animation: float 3s ease-in-out infinite; 
+}
+
+
+
+
+
+
 
 
 
