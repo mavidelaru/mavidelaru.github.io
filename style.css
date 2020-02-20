@@ -8,38 +8,189 @@ body{
 	font-weight: 400;	
 }
 
-/**** NAV ****/
+/************* BURGUER *************/
+
+#menuToggle
+{
+  display: block;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ *  hide the middle one.
+ */
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Change direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+
+
+#menu
+{
+  justify-items: center;
+  width: 25vw;
+  margin: -100px 0 0 -50px;
+  padding: 50%  0% 0% 10%;
+  height: 120vh;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  	-webkit-box-shadow: 14px -1px 7px -14px rgba(0,0,0,0.36);
+	-moz-box-shadow: 14px -1px 7px -14px rgba(0,0,0,0.36);
+	box-shadow: 14px -1px 7px -14px rgba(0,0,0,0.36);
+}
+
+.navigation{
+	text-align: center;
+	width: 13vw; 
+	padding-top: 10vh;
+	line-height: -1%;
+	margin-bottom: 2%;
+}
+
+#menu li
+{
+  padding:  0;
+  font-size: 4vh;
+  font-family: 'Montserrat';
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+
+/************* NAV *************/
+nav{
+	box-shadow: 0 3px 3px rgba(33,33,33,.1);
+	max-width: 100vw;	
+}
+
+
+.navigation:hover{
+	border-style: solid;
+    opacity: 1;
+	border-width: 0px 0px 14px;
+	transition: 0.2s;
+}
 
 a:hover{
 	text-decoration: none;
 }
 
-nav{
-	box-shadow: 0 3px 3px rgba(33,33,33,.1);
-	max-width: 100vw;	
-}
-.nav-direction{
-	float: right;
-	width: 10vw;
-	margin-top:3vh;
-	min-height: 4vh;
-	margin-left: 8%;
-	color: #3C3C3C;
-    text-align: center;
-    letter-spacing: 3px;
-    font-size: 1rem;
-    line-height: 14px;
-    font-weight: 700;
+#menuToggle a:hover
+{
+  color: tomato;
 }
 
-.nav-direction:hover{
-	border-style: solid;
-    border-color: #F3A6AF;
-    opacity: 1;
-	border-width: 0px 0px 5px;
-	transition: 0.2s;
+ul #home:hover{
+	border-color: #ffe1ef;
 }
 
+#about:hover{
+	border-color: #faf3d5;
+}
+#portfolio:hover{
+	border-color: #e0f0f8;
+}
 nav img {
 	max-width: 3rem;
 }
@@ -50,15 +201,11 @@ nav img {
   }
   
 
-
-/**** Intro ****/
-
-/**** Intro ****/
-
+/************* INTRO *************/
 #intro
 {
 	background-color: #f8f8f8;
-	height: 85vh;
+	height: 100vh;
     max-height: 100vh;
     max-width: 100%;
 	justify-content: center;
@@ -70,14 +217,14 @@ nav img {
     height: 100%;
     width: 100%;
     justify-content: center;
-    align-items: center;
+	align-items: center;
+	margin-top: 15%;
 
 }
 
 #position-text{
     clear: both;
     position: relative;
-    z-index: 2;
     flex-flow: column   
 }
 
@@ -91,12 +238,13 @@ h2{
 	line-height: 26px;
     font-size: 25px;
     font-family: 'Montserrat';
-    font-weight: 300;
+	font-weight: 300;
+	text-align: center;
 }
 
 p{
-	line-height: 30px;
-    font-size: 16px;
+	line-height: 40px;
+    font-size: 19px;
     font-family: lato, sans-serif;
     font-weight: 300;
     margin: 0% 20% 0% 20%;
@@ -104,7 +252,6 @@ p{
 }
 
 h3{
-	text-align: center;
 	text-align: center;
     letter-spacing: 2.5px;
     font-size: 15px;
@@ -145,18 +292,12 @@ button{
 
 button:hover{
   transition: 0.35s;
-  border-color: white;
-  color: white;
+  border-color: #b8daeb;
+  color: #b8daeb;
 }
 
 
-
-
-
-
-
-
-/*Manchas flotando*/
+/************* MANCHAS *************/
 
 /*		filter: drop-shadow(0 0 0.75rem rgba(0,0,0,0.3));
 */
@@ -166,19 +307,7 @@ button:hover{
 		transform: translatey(0px);
 	}
 	50% {
-		transform: translatey(-20px);
-	}
-	100% {
-		transform: translatey(0px);
-	}
-}
-
-@keyframes float-between {
-	0% {
-		transform: translatey(0px);
-	}
-	50% {
-		transform: translatey(-20px);
+		transform: translatey(-40px);
 	}
 	100% {
 		transform: translatey(0px);
@@ -186,12 +315,13 @@ button:hover{
 }
 
 
+
 @keyframes float-between {
 	0% {
 		transform: translatey(0px);
 	}
 	50% {
-		transform: translatey(30px);
+		transform: translatey(35px);
 	}
 	100% {
 		transform: translatey(-0px);
@@ -206,7 +336,7 @@ button:hover{
   
 }
 
-/*General manchas arriba*/
+/*General manchas*/
 
 .stain {
 	transform: translatey(0px);
@@ -217,63 +347,60 @@ img {
     width: 100%;  
 }
 
+/*General superiores*/
 
 #up-yellow-stain{
-    width: 90vh;
-    margin: -13rem 7rem 0rem 60rem;
+    width: 100vh;
+    margin: -16rem 7rem 0rem 60rem;
     animation: float-between 5s ease-in-out infinite;
 }
 
 #up-pink-stain{
     width: 50vh;
-    margin: -30rem 6rem 0rem 0rem;
+    margin: -30rem 8rem 0rem 0rem;
     animation: float 7s ease-in-out infinite;
 }
 
 #up-blue-stain{
     width: 40vh;
-    margin: -14rem 15% 0% 0vw;
+    margin: -14rem 16% 0% 0vw;
     animation: float 6s ease-in-out infinite;
 }
 
 
 
-
+/*General inferiores*/
 #down-yellow-stain{
-    width: 60vh;
-    margin: -20rem 90% 0% 0rem;
+    width: 70vh;
+    margin: -25rem 90% 0% 0rem;
     animation: float-between 3s ease-in-out infinite; 
 }
 
 #down-blue-stain{
     width: 70vh;
     margin: -30rem 100rem 0rem -20rem;
-    animation: float 6s ease-in-out infinite;
+    animation: float 5s ease-in-out infinite;
      
 }
 
 #down-pink-stain{
     width: 50vh;
     margin: -10rem 90rem 0% -40rem;
-    animation: float 3s ease-in-out infinite; 
+    animation: float 4s ease-in-out infinite; 
 }
 
 
 
+/************* PORTFOLIO *************/
 
-
-
-
-
-
-
-/**** Portfolio ****/
-
+#portfolio{
+	padding-top: 5%;
+}
 figure {
+
 	float: left;
 	overflow: hidden;
 	margin: 10px 1%;
-
 	height: auto;
 	text-align: center;
 	cursor: pointer;
@@ -327,13 +454,6 @@ figure p {
 	letter-spacing: 1px;
 	font-size: 68.5%;
 }
-
-
-
-
-
-
-
 
 
 .project{
@@ -421,7 +541,9 @@ figure.effect-julia:hover p {
 	transform: translate3d(0,0,0);
 }
 
-/**** Skills ****/
+
+
+/************* SKILLS *************/
 
 #skills{
 	
@@ -441,3 +563,29 @@ figure.effect-julia:hover p {
 	filter: grayscale(30%);
 
 }
+
+
+/************* CONTACT *************/
+
+#contact{
+	
+	background-color: #faf3d5;
+	justify-content: center;
+	align-items: center;
+	height: 70vh;
+	text-align: center;
+	padding-top: 5%;
+}
+
+#contact-title{
+	font-weight: 1000;
+	margin-bottom: 3%;
+}
+
+#button-contact:hover{
+	border-color: lightcoral;
+	color: lightcoral;
+}
+
+
+

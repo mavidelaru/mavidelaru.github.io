@@ -11,152 +11,166 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Chonburi&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/m.png">
 
-  
 </head>
 
 <body>
 
-  <!-- Navbar -->
+  <!------- NAV -------->
+  <nav role="navigation" class="d-none d-sm-block">
+    
+      <!--
+      Burguer
+      -->
+    <div id="menuToggle">
+      <input type="checkbox" />
 
-  <nav class="navbar navbar-default d-none d-sm-block ">
-    <div class="container">
-      <div class="navbar-header w-100">
+      <span></span>
+      <span></span>
+      <span></span>
 
-        <div class="d-flex justify-content-end"></div>
-        <a class="navbar-brand " href="#">
-          <img alt="Brand" src="img/m.png">
+        <!--
+        Menu display
+        -->
+
+      <ul id="menu">
+
+        <a href="#">
+          <div class="navigation" id="home">
+            <li>Home</li>
+          </div>
         </a>
 
-        <a class="nav-direction" href="#portfolio">Portfolio</a>
-        <!--<a class="nav-direction" href="">About</a>-->
-      </div>
-    </div>
+        <a href="#portfolio">
+          <div class="navigation" id="portfolio">
+            <li>Portfolio</li>
+          </div>
+        </a>
+
+        <a href="#about">
+          <div class="navigation" id="about">
+            <li>About</li>
+          </div>
+        </a>
+
+      </ul>
     </div>
   </nav>
 
 
+  <!------- INTRO-------->
 
+  <div id="intro" class="container-fluid d-flex p-5 text-center ">
 
-  <!-- Intro -->
+    <div id="flex-intro" class="pt-5 ">
 
-    <div id="intro" class="container-fluid d-flex p-5 text-center ">
+      <!--
+        Manchas flotando
+      -->
+      <div id="stain-container">
 
-        <div id="flex-intro" class="pt-5 ">
-            <!--Manchas flotando-->
-            <div id="stain-container">
-
-                <div class="stain" id="up-yellow-stain">
-                    <img src="img/svg/Recurso 2.svg" alt="up-yellow-stain" />
-                </div>
-
-                <div class="stain" id="up-pink-stain">
-                    <img src="img/svg/Recurso 3.svg" alt="up-pink-stain" />
-                </div>
-                <div class="stain" id="up-blue-stain">
-                    <img src="img/svg/Recurso1.svg" alt="up-blue-stain" />
-                </div>
-
-
-
-                <div class="stain" id="down-yellow-stain">
-                    <img src="img/svg/Recurso 7.svg " alt="up-yellow-stain" />
-                </div>
-
-                <div class="stain" id="down-pink-stain">
-                    <img src="img/svg/Recurso 5.svg" alt="up-pink-stain" />
-                </div>
-                <div class="stain" id="down-blue-stain">
-                    <img src="img/svg/Recurso1.svg" alt="up-blue-stain" />
-                </div>
-
-            </div>
-
-
-
-            <div id="position-text">
-
-                <div class="  ">
-
-                    <h1 class=" mt-md-4 ml-md-5 ">Hi, I'm Marta Vidal!</h1>
-                    <h2 class=" ml-md-5 mt-3">Front end developer & UI designer</h2>
-
-
-                    <div class=" mt-5 m-d p-5 d-none text-center d-md-inline">
-
-                        <p class="mt-4">Positiva, alegre y dinámica. Siempre he apostado por el aprendizaje continuo.
-                            Después de años en el
-                            mundo de
-                            la comunicación, marketing y diseño, he unificado
-                            mi experiencia y capacidades dando un giro a mi carrera hacia el desarrollo Front-End.</>
-                    </div>
-
-                    <button class="mt-5  onclick=" window.location.href='https://www.linkedin.com/in/mavidelaru/' ;">MÁS
-                        SOBRE MI</button>
-
-                </div>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <div class="stain" id="up-yellow-stain">
+          <img src="img/svg/Recurso 2.svg" alt="up-yellow-stain" />
         </div>
 
+        <div class="stain" id="up-pink-stain">
+          <img src="img/svg/Recurso 3.svg" alt="up-pink-stain" />
+        </div>
+        <div class="stain" id="up-blue-stain">
+          <img src="img/svg/Recurso1.svg" alt="up-blue-stain" />
+        </div>
+
+        <div class="stain" id="down-yellow-stain">
+          <img src="img/svg/Recurso 7.svg " alt="up-yellow-stain" />
+        </div>
+
+        <div class="stain" id="down-pink-stain">
+          <img src="img/svg/Recurso 5.svg" alt="up-pink-stain" />
+        </div>
+        <div class="stain" id="down-blue-stain">
+          <img src="img/svg/Recurso1.svg" alt="up-blue-stain" />
+        </div>
+
+      </div>
+
+      <!--
+       Texto + button
+      -->
+
+      <div id="position-text">
+
+        <div class="  ">
+
+          <h1 class=" mt-md-4 ml-md-5 ">Hi, I'm Marta Vidal!</h1>
+          <h2 class=" ml-md-5 mt-3">Front end developer & UI designer</h2>
+
+
+          <div class=" mt-5 m-d p-5 d-none text-center d-md-inline">
+
+            <p class="mt-4">Positiva, alegre y dinámica. Siempre he apostado por el aprendizaje continuo.
+              Después de años en el
+              mundo de
+              la comunicación, marketing y diseño, he unificado
+              mi experiencia y capacidades dando un giro a mi carrera hacia el desarrollo Front-End.
+          </div>
+        </div>
+
+        <button class="mt-5"  onclick=" window.open('https://www.linkedin.com/in/mavidelaru/')">MÁS
+          SOBRE MI</button>
+
+      </div>
     </div>
 
+  </div>
+
+  </div>
 
 
-  <!-- Portfolio for computer-->
+  <!------- PORTFOLIO -------->
+
 
   <div id="portfolio" class="container-fluid pb-5">
-    <h3>Portfolio</h3>
+    <h2>PORTFOLIO</h2>
 
-    <div class="row d-flex justify-content-center">
+     <!--
+       Grid
+      -->
 
-
-      <figure class="effect-julia col-11 col-sm-5 ">
+    <div class="row d-flex justify-content-center pt-5">
+      <figure class="effect-julia col-11 col-sm-6 ">
 
         <a href="https://mavidelaru.github.io/Countries_Search" target="_blank">
           <img src="img/mockups/Mockup-countries.jpg" alt="Angular Api" />
-       
-        <figcaption>
-          <h2>Tabla de Paises</h2>
 
-          <div>
-            <p>Llamada a Api Rest</p>
-            <p> Framework Angular</p>
-          </div>
+          <figcaption>
+            <h2>Tabla de Paises</h2>
 
-        </figcaption>
-      </a>
+            <div>
+              <p>Llamada a Api Rest</p>
+              <p> Framework Angular</p>
+            </div>
+
+          </figcaption>
+        </a>
       </figure>
 
-      <figure class="effect-julia col-11 col-sm-5 ">
+      <figure class="effect-julia col-11 col-sm-6 ">
         <a href="https://mavidelaru.github.io/maps-location/" target="_blank">
           <img src="img/mockups/Mockup-location.jpg" alt="Location-Leaflet" />
-        
-        <figcaption>
-          <h2>Mapa Interactivo</h2>
-          <div>
-            <p>Libreria open source Leaflet</p>
-            <p>Bootstrap + Javascript</p>
-          </div>
-        </figcaption>
-      </a>
+
+          <figcaption>
+            <h2>Mapa Interactivo</h2>
+            <div>
+              <p>Libreria open source Leaflet</p>
+              <p>Bootstrap + Javascript</p>
+            </div>
+          </figcaption>
+        </a>
       </figure>
 
 
-      <figure class="effect-julia col-11 col-sm-5 ">
+      <figure class="effect-julia col-11 col-sm-6 ">
         <a href="https://mavidelaru.github.io/ratings" target="_blank">
           <img src="img/mockups/mockup-rating.jpg" alt="Rating" />
         </a>
@@ -167,11 +181,11 @@
             <p>Javascript</p>
           </div>
         </figcaption>
-      </a>
+        </a>
       </figure>
 
 
-      <figure class="effect-julia col-11 col-sm-5 ">
+      <figure class="effect-julia col-11 col-sm-6 ">
         <a href="https://mavidelaru.github.io/Form/" target="_blank">
           <img src="img/mockups/Mockup.jpg" alt="Formulario" />
         </a>
@@ -182,11 +196,11 @@
             <p>Javascript</p>
           </div>
         </figcaption>
-      </a>
+        </a>
       </figure>
 
 
-      <figure class="effect-julia col-11 col-sm-5 ">
+      <figure class="effect-julia col-11 col-sm-6 ">
         <a href="https://mavidelaru.github.io/stripe/" target="_blank">
           <img src="img/mockups/stripes.jpg" alt="Stripes" />
         </a>
@@ -197,12 +211,10 @@
             <p>Sass</p>
           </div>
         </figcaption>
-      </a>
+        </a>
       </figure>
 
-
-
-      <figure class="effect-julia col-11 col-sm-5 ">
+      <figure class="effect-julia col-11 col-sm-6 ">
         <a href="https://mavidelaru.github.io/Ajax-restapi" target="_blank">
           <img src="img/mockups/ajax.jpg" alt="Ajax-restapi" />
         </a>
@@ -212,7 +224,7 @@
             <p>JQuery Ajax + Rest Api</p>
           </div>
         </figcaption>
-      </a>
+        </a>
       </figure>
 
 
@@ -222,7 +234,7 @@
 
 
 
-<!--
+  <!--
   <div id="skills" class="p-5">
     <div class="row d-flex justify-content-center ">
 
@@ -267,7 +279,36 @@
     </div>
 
   </div>
+
+
+
 -->
+
+
+
+
+
+
+  <!------- CONTACT -------->
+
+  <div class="container-fluid" id="contact">
+    <h2 id="contact-title">GET IN TOUCH</h2>
+    <span></span>
+    <p>¿Quieres saber más sobre mí o mi trabajo?</p>
+
+    <p> ¿O tienes un proyecto genial en el que quieres que me sumerja?</p>
+      
+      <p>¡Envíeme un correo electrónico o llámeme!</p>
+
+      <a href="/cv/Marta_Vidal-CV.pdf" download="Marta-Vidal-CV">
+        <button class="mt-5" id="button-contact"> Descargar CV</button>
+      </a>
+
+
+  </div>
+
+
+
 
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
