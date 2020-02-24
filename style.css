@@ -732,7 +732,7 @@ figure.effect-julia:hover p {
 
 #skills img {
   width: 8vh;
-  height: auto;
+  height: 8vh;
   filter: grayscale(100%);
   justify-content: center;
   align-items: center;
