@@ -121,6 +121,7 @@ body {
   width: 100vw;
   margin: -100px 0 0 -50px;
   padding-top: 3%;
+  padding-left: 0%!important;
   height: 120vh;
   background: white;
   list-style-type: none;
@@ -362,7 +363,7 @@ img {
 
 #up-yellow-stain {
   width: 100vh;
-  margin: -15rem 11rem 0rem 60rem;
+  margin: -17rem 11rem 0rem 60rem;
   animation: float-between 3s ease-in-out infinite;
 }
 
@@ -374,7 +375,7 @@ img {
 
 #up-blue-stain {
   width: 40vh;
-  margin: -7rem 16% 0% 0vw;
+  margin: -10rem 16% 0% 0vw;
   animation: float 5s ease-in-out infinite;
 }
 
