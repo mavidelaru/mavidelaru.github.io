@@ -363,19 +363,19 @@ img {
 
 #up-yellow-stain {
   width: 100vh;
-  margin: -22rem 6rem 0rem 52rem;
+  margin: -15rem 6rem 0rem 52rem;
   animation: float-between 3s ease-in-out infinite;
 }
 
 #up-pink-stain {
   width: 60vh;
-  margin: -38rem 9rem 0rem 0rem;
+  margin: -27rem 9rem 0rem 0rem;
   animation: float 7s ease-in-out infinite;
 }
 
 #up-blue-stain {
   width: 35vh;
-  margin: -13rem 25% 0% 0vw;
+  margin: -7rem 25% 0% 0vw;
   animation: float 5s ease-in-out infinite;
 }
 
