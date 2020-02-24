@@ -265,10 +265,10 @@ h2 {
 }
 
 .intro-text {
-  line-height: 40px;
-  font-size: 14px;
+  line-height: 30px;
+  font-size: 15px;
   font-family: lato, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   margin: 0% 20vw 0% 20vw;
 }
 
