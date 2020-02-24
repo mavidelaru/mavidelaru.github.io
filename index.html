@@ -18,9 +18,9 @@
 <body>
 
   <!------- NAV -------->
-  <nav role="navigation" class="d-none d-sm-block">
-    
-      <!--
+  <nav role="navigation" >
+
+    <!--
       Burguer
       -->
     <div id="menuToggle">
@@ -30,40 +30,44 @@
       <span></span>
       <span></span>
 
-        <!--
+      <!--
         Menu display
         -->
 
       <ul id="menu">
 
-        <a href="#">
-          <div class="navigation" id="home">
+
+        <div class="navigation" >
+          <a id="home-nav" href="index.html">
             <li>Home</li>
-          </div>
-        </a>
+          </a>
+        </div>
 
-        <a href="#portfolio">
-          <div class="navigation" id="portfolio">
+        <div class="navigation" >
+          <a id="portfolio-nav" href="portfolio.html">
             <li>Portfolio</li>
-          </div>
-        </a>
+          </a>
+        </div>
 
-        <a href="#about">
-          <div class="navigation" id="about">
+        <div class="navigation" >
+          <a id="about-nav" href="about.html">
             <li>About</li>
-          </div>
-        </a>
+          </a>
+        </div>
+
 
       </ul>
     </div>
+
+    
   </nav>
 
 
   <!------- INTRO-------->
 
-  <div id="intro" class="container-fluid d-flex p-5 text-center ">
+  <div  class="intro container-fluid d-flex p-5 text-center ">
 
-    <div id="flex-intro" class="pt-5 ">
+    <div id="flex-intro" class="pt-3 ">
 
       <!--
         Manchas flotando
@@ -102,22 +106,23 @@
 
         <div class="  ">
 
-          <h1 class=" mt-md-4 ml-md-5 ">Hi, I'm Marta Vidal!</h1>
+          <h1 class=" mt-md-2 ml-md-5 ">Hi, I'm Marta Vidal!</h1>
           <h2 class=" ml-md-5 mt-3">Front end developer & UI designer</h2>
 
 
           <div class=" mt-5 m-d p-5 d-none text-center d-md-inline">
 
-            <p class="mt-4">Positiva, alegre y dinámica. Siempre he apostado por el aprendizaje continuo.
-              Después de años en el
-              mundo de
-              la comunicación, marketing y diseño, he unificado
-              mi experiencia y capacidades dando un giro a mi carrera hacia el desarrollo Front-End.
+            <p class="intro-text mt-4 mt-4  pr-md-5 pl-md-5">Energetic and dynamic. 
+              I am passionate about technologie and creativity, 
+              advocating for lifelong learning. My main ambition is 
+              to turn creative ideas into innovative products. </p>
+
+
           </div>
         </div>
 
-        <button class="mt-5"  onclick=" window.open('https://www.linkedin.com/in/mavidelaru/')">MÁS
-          SOBRE MI</button>
+       <a href="portfolio.html"> <button class="mt-5" class="draw">
+          PORTFOLIO</button></a>
 
       </div>
     </div>
@@ -127,185 +132,8 @@
   </div>
 
 
-  <!------- PORTFOLIO -------->
 
 
-  <div id="portfolio" class="container-fluid pb-5">
-    <h2>PORTFOLIO</h2>
-
-     <!--
-       Grid
-      -->
-
-    <div class="row d-flex justify-content-center pt-5">
-      <figure class="effect-julia col-11 col-sm-6 ">
-
-        <a href="https://mavidelaru.github.io/Countries_Search" target="_blank">
-          <img src="img/mockups/Mockup-countries.jpg" alt="Angular Api" />
-
-          <figcaption>
-            <h2>Tabla de Paises</h2>
-
-            <div>
-              <p>Llamada a Api Rest</p>
-              <p> Framework Angular</p>
-            </div>
-
-          </figcaption>
-        </a>
-      </figure>
-
-      <figure class="effect-julia col-11 col-sm-6 ">
-        <a href="https://mavidelaru.github.io/maps-location/" target="_blank">
-          <img src="img/mockups/Mockup-location.jpg" alt="Location-Leaflet" />
-
-          <figcaption>
-            <h2>Mapa Interactivo</h2>
-            <div>
-              <p>Libreria open source Leaflet</p>
-              <p>Bootstrap + Javascript</p>
-            </div>
-          </figcaption>
-        </a>
-      </figure>
-
-
-      <figure class="effect-julia col-11 col-sm-6 ">
-        <a href="https://mavidelaru.github.io/ratings" target="_blank">
-          <img src="img/mockups/mockup-rating.jpg" alt="Rating" />
-        </a>
-        <figcaption>
-          <h2> Rating</h2>
-          <div>
-            <p>Ratin con SVG</p>
-            <p>Javascript</p>
-          </div>
-        </figcaption>
-        </a>
-      </figure>
-
-
-      <figure class="effect-julia col-11 col-sm-6 ">
-        <a href="https://mavidelaru.github.io/Form/" target="_blank">
-          <img src="img/mockups/Mockup.jpg" alt="Formulario" />
-        </a>
-        <figcaption>
-          <h2>Formulario</h2>
-          <div>
-            <p>Formulario con validaciones</p>
-            <p>Javascript</p>
-          </div>
-        </figcaption>
-        </a>
-      </figure>
-
-
-      <figure class="effect-julia col-11 col-sm-6 ">
-        <a href="https://mavidelaru.github.io/stripe/" target="_blank">
-          <img src="img/mockups/stripes.jpg" alt="Stripes" />
-        </a>
-        <figcaption>
-          <h2>Formulario</h2>
-          <div>
-            <p>Animación e interacción con usuario</p>
-            <p>Sass</p>
-          </div>
-        </figcaption>
-        </a>
-      </figure>
-
-      <figure class="effect-julia col-11 col-sm-6 ">
-        <a href="https://mavidelaru.github.io/Ajax-restapi" target="_blank">
-          <img src="img/mockups/ajax.jpg" alt="Ajax-restapi" />
-        </a>
-        <figcaption>
-          <h2>Generador de bromas</h2>
-          <div>
-            <p>JQuery Ajax + Rest Api</p>
-          </div>
-        </figcaption>
-        </a>
-      </figure>
-
-
-    </div>
-
-  </div>
-
-
-
-  <!--
-  <div id="skills" class="p-5">
-    <div class="row d-flex justify-content-center ">
-
-      <div class="d-flex col-3 justify-content-center" data-toggle="tooltip" data-placement="bottom" title="html5">
-        <img src="img/iconoc/html5.png" alt="html">
-      </div>
-
-      <div class="col-3 d-flex justify-content-center" data-toggle="tooltip" data-placement="bottom" title="Css 3">
-        <img src="img/iconoc/css3.png" alt="css">
-      </div>
-
-      <div class="col-3 d-flex justify-content-center" data-toggle="tooltip" data-placement="bottom" title="Javascript">
-        <img src="img/iconoc/js.jpg" alt="javascript">
-      </div>
-
-      <div class="col-3 d-flex justify-content-center" data-toggle="tooltip" data-placement="bottom" title="JQuery">
-        <img src="img/iconoc/jquery.png" alt="jquery">
-      </div>
-
-      <div class="col-3 d-flex justify-content-center" data-toggle="tooltip" data-placement="bottom" title="Typescript">
-        <img src="img/iconoc/typescript.svg" alt="typescript">
-      </div>
-
-      <div class="col-3 d-flex justify-content-center" data-toggle="tooltip" data-placement="bottom" title="Sass">
-        <img src="img/iconoc/sass.svg" alt="sass">
-      </div>
-
-      <div class="col-3 d-flex justify-content-center" data-toggle="tooltip" data-placement="bottom" title="Bootstrap">
-        <img src="img/iconoc/wordpress.png" alt="wordpress">
-      </div>
-
-      <div class="col-3 d-flex justify-content-center" data-toggle="tooltip" data-placement="bottom"
-        title="Adobe Photoshop">
-        <img src="img/iconoc/photoshop.svg" alt="photoshop">
-      </div>
-
-      <div class="col-3 d-flex justify-content-center" data-toggle="tooltip" data-placement="bottom"
-        title="Adobe Ilustrator">
-        <img src="img/iconoc/illustrator.svg" alt="ilustrator">
-      </div>
-
-    </div>
-
-  </div>
-
-
-
--->
-
-
-
-
-
-
-  <!------- CONTACT -------->
-
-  <div class="container-fluid" id="contact">
-    <h2 id="contact-title">GET IN TOUCH</h2>
-    <span></span>
-    <p>¿Quieres saber más sobre mí o mi trabajo?</p>
-
-    <p> ¿O tienes un proyecto genial en el que quieres que me sumerja?</p>
-      
-      <p>¡Envíeme un correo electrónico o llámeme!</p>
-
-      <a href="/cv/Marta_Vidal-CV.pdf" download="Marta-Vidal-CV">
-        <button class="mt-5" id="button-contact"> Descargar CV</button>
-      </a>
-
-
-  </div>
 
 
 
@@ -322,11 +150,6 @@
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
 
-  <script>
-    $(function () {
-      $('[data-toggle="tooltip"]').tooltip()
-    })
-  </script>
 </body>
 
 </html>
