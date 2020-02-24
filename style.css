@@ -363,38 +363,38 @@ img {
 
 #up-yellow-stain {
   width: 100vh;
-  margin: -17rem 11rem 0rem 60rem;
+  margin: -26rem 6rem 0rem 52rem;
   animation: float-between 3s ease-in-out infinite;
 }
 
 #up-pink-stain {
   width: 60vh;
-  margin: -19rem 10rem 0rem 0rem;
+  margin: -42rem 9rem 0rem 0rem;
   animation: float 7s ease-in-out infinite;
 }
 
 #up-blue-stain {
-  width: 40vh;
-  margin: -10rem 16% 0% 0vw;
+  width: 35vh;
+  margin: -18rem 25% 0% 0vw;
   animation: float 5s ease-in-out infinite;
 }
 
 /*General inferiores*/
 #down-yellow-stain {
   width: 70vh;
-  margin: -2rem 85% 0% 0rem;
+  margin: -18rem 85% 0% 0rem;
   animation: float-between 3s ease-in-out infinite;
 }
 
 #down-blue-stain {
   width: 70vh;
-  margin: 0rem 97rem 0rem -20rem;
+  margin: -33rem 97rem 0rem -20rem;
   animation: float 5s ease-in-out infinite;
 }
 
 #down-pink-stain {
   width: 50vh;
-  margin: 0rem 87rem 0% -40rem;
+  margin: -17rem 84rem 0% -40rem;
   animation: float 4s ease-in-out infinite;
 }
 
