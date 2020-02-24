@@ -362,19 +362,19 @@ img {
 
 #up-yellow-stain {
   width: 100vh;
-  margin: -10rem 9rem 0rem 60rem;
+  margin: -15rem 11rem 0rem 60rem;
   animation: float-between 3s ease-in-out infinite;
 }
 
 #up-pink-stain {
   width: 60vh;
-  margin: -15rem 8rem 0rem 0rem;
+  margin: -19rem 10rem 0rem 0rem;
   animation: float 7s ease-in-out infinite;
 }
 
 #up-blue-stain {
   width: 40vh;
-  margin: 0rem 16% 0% 0vw;
+  margin: -7rem 16% 0% 0vw;
   animation: float 5s ease-in-out infinite;
 }
 
