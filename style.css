@@ -381,13 +381,13 @@ img {
 /*General inferiores*/
 #down-yellow-stain {
   width: 70vh;
-  margin: -7rem 85% 0% 0rem;
+  margin: -15rem 85% 0% 0rem;
   animation: float-between 3s ease-in-out infinite;
 }
 
 #down-blue-stain {
   width: 70vh;
-  margin: -10rem 97rem 0rem -20rem;
+  margin: -5rem 97rem 0rem -20rem;
   animation: float 5s ease-in-out infinite;
 }
 
