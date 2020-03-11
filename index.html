@@ -17,25 +17,18 @@
 
 <body>
 
-  <!------- NAV -------->
-  <nav role="navigation">
+  <!------- NAV
+  <nav role="navigation" class="">
 
-    <!--
-      Burguer
-      -->
-    <div id="menuToggle">
+    <div id="menuToggle" class="d-none d-lg-block" >
       <input type="checkbox" />
 
       <span></span>
       <span></span>
       <span></span>
 
-      <!--
-        Menu display
-        -->
 
       <ul id="menu">
-
 
         <div class="navigation">
           <a id="home-nav" href="index.html">
@@ -43,91 +36,459 @@
           </a>
         </div>
 
+
         <div class="navigation">
-          <a id="portfolio-nav" href="portfolio.html">
+          <a id="portfolio-nav" href=".portfolio_area">
             <li>Portfolio</li>
           </a>
         </div>
 
         <div class="navigation">
-          <a id="about-nav" href="about.html">
+          <a id="about-nav" href="#about">
             <li>About</li>
           </a>
         </div>
 
-
       </ul>
     </div>
-
-
   </nav>
 
+  -------->
+      
 
-  <!------- INTRO-------->
+  <!----------------- INTRO-------------------->
 
-  <div class="intro container-fluid d-flex p-5 text-center ">
-
+  <div id="intro" class="container-fluid d-flex p-5 text-center ">
     <div id="flex-intro">
 
-      <!--
-        Manchas flotando
-      -->
+      <!-- Manchas flotando-->
       <div id="stain-container">
 
-        <div class="stain" id="up-yellow-stain">
-          <img src="img/svg/Recurso 2.svg" alt="up-yellow-stain" />
+
+        <div class="case1">
+          <svg id="circle5" height="90mm" width="90mm">
+            <defs>
+              <linearGradient id="grad3" x1="20%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:rgb(255,126 ,129);stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgb(125,0,110);stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <circle cx="30mm" cy="30mm" r="25mm" fill="url(#grad3)" />
+          </svg>
         </div>
 
-        <div class="stain" id="up-pink-stain">
-          <img src="img/svg/Recurso 3.svg" alt="up-pink-stain" />
-        </div>
-        <div class="stain" id="up-blue-stain">
-          <img src="img/svg/Recurso1.svg" alt="up-blue-stain" />
+
+
+
+        <img class="stain case1" id="up-green-stain" src="img/intro/Recurso 5.png" alt="">
+        <img class="stain case2" id="down-green-stain" src="img/intro/Recurso 6.png" alt="">
+        <img class="stain case3" id="up-pink-stain" src="img/intro/Recurso 8.png" alt="">
+        <img class="stain case4" id="down-purple-stain" src="img/intro/Recurso7.png" alt="">
+
+
+        <div class="case4">
+          <svg id="circle1" class="" height="90mm" width="90mm">
+            <defs>
+              <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:rgb(211,39 ,250);stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgb(48,61,163);stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <circle cx="25mm" cy="25mm" r="20mm" fill="url(#grad1)" />
+          </svg>
         </div>
 
-        <div class="stain" id="down-yellow-stain">
-          <img src="img/svg/Recurso 7.svg " alt="up-yellow-stain" />
+        <div class="case1">
+          <svg id="circle2" class="" height="90mm" width="90mm">
+            <defs>
+              <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:rgb(211,39 ,250);stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgb(48,61,163);stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <circle cx="35mm" cy="35mm" r="30mm" fill="url(#grad2)" />
+          </svg>
         </div>
 
-        <div class="stain" id="down-pink-stain">
-          <img src="img/svg/Recurso 5.svg" alt="up-pink-stain" />
+        <div class="case2">
+          <svg id="circle3" class="" height="90mm" width="90mm">
+            <defs>
+              <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:rgb(211,39 ,250);stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgb(48,61,163);stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <circle cx="30mm" cy="30mm" r="25mm" fill="url(#grad2)" />
+          </svg>
         </div>
-        <div class="stain" id="down-blue-stain">
-          <img src="img/svg/Recurso1.svg" alt="up-blue-stain" />
+
+        <div class="case1">
+          <svg id="circle4" class="" height="90mm" width="90mm">
+            <defs>
+              <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:rgb(211,39 ,250);stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgb(48,61,163);stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <circle cx="20mm" cy="20mm" r="15mm" fill="url(#grad2)" />
+          </svg>
+        </div>
+
+        <div class="case3">
+          <svg id="circle6" height="90mm" width="90mm">
+            <defs>
+              <linearGradient id="grad3" x1="20%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:rgb(255,126 ,129);stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgb(125,0,110);stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <circle cx="10mm" cy="10mm" r="5mm" fill="url(#grad3)" />
+          </svg>
         </div>
 
       </div>
 
-      <!--
-       Texto + button
-      -->
+      <!--Texto + button-->
+      <div id="position-text" class="case6">
+        <div>
 
-      <div id="position-text">
-
-        <div class="  ">
-
-          <h1 class=" mt-md-2 ml-md-5 ">Hi, I'm Marta Vidal!</h1>
-          <h2 class=" ml-md-5 mt-3">Front end developer & UI designer</h2>
+          <h1 class=" mt-md-2 ml-md-5 ">Hi, I'm Marta Vidal</h1>
+          <h2 class=" ml-md-5 mt-4 mb-3">Front end developer & UI designer</h2>
 
 
-          <div class=" mt-5 m-d p-5 d-none text-center d-md-inline">
-
-            <p class="intro-text mt-4 mt-4  pr-md-5 pl-md-5">Energetic and dynamic.
-              I am passionate about technology and innovation,
-              advocating for lifelong learning. My main ambition is
-              to turn creative ideas into innovative products. </p>
+          <div class=" mt-5 p-5 d-none text-center d-md-inline">
+            <p>Energetic and dynamic. I am passionate about technology and <br />
+              innovation, advocating for lifelong learning. My main ambition <br />
+              is to turn creative ideas into innovative products.</p>
           </div>
         </div>
 
-        <a href="portfolio.html"> <button class="mt-5" class="draw">
-            PORTFOLIO</button></a>
+
+        <button class="mt-5" class="draw" onclick=" window.open('https://www.linkedin.com/in/mavidelaru/')">
+          MORE ABOUT ME</button>
 
       </div>
+
+      <!--Arrow scroll-->
+      <div id="scroll-arrow">
+        <svg class="arrows">
+          <path class="a2" d="M0 20 L30 52 L60 20"></path>
+          <path class="a3" d="M0 40 L30 72 L60 40"></path>
+        </svg>
+      </div>
+
     </div>
 
   </div>
 
+  <!----------------- PORTFOLIO-------------------->
+
+  <!-- portfolio_area -->
+
+  <div class="portfolio_area portfolio_bg_1">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+          <div class="section_title white_text text-center">
+            <span>Portfolio</span>
+            <h3>Some of my awesome <br>
+              stuffs here</h3>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <!-- portfolio_image_area  -->
+  <div class="portfolio_image_area mb-4">
+    <div class="container">
+      <div class="row">
+
+
+        <div class="col-xl-5 col-md-5">
+          <div class="single_Portfolio">
+            <div class="portfolio_thumb case1">
+              <img src="img/mockups/stripes.jpg" alt="">
+            </div>
+
+            <a href="https://mavidelaru.github.io/stripe/" target="_blank" class="popup popup-image ">
+            </a>
+            <div class="portfolio_hover">
+              <div class="title">
+                <h3>Sass stripes</h3>
+                <p>Animation with user interaction</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-xl-7 col-md-7">
+          <div class="single_Portfolio">
+            <div class="portfolio_thumb case3">
+              <img src="img/mockups/ajax.jpg" alt="">
+            </div>
+            <a href="https://mavidelaru.github.io/Ajax-restapi" target="_blank" class="popup popup-image "></a>
+            <div class="portfolio_hover">
+              <div class="title">
+                <h3>What does Chuck Norris say?</h3>
+                <p>JQuery Ajax + Rest Api</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          
+        <div class="col-xl-4 col-md-6 col-lg-4">
+          <div class="single_Portfolio">
+            <div class="portfolio_thumb case2">
+              <img src="img/mockups/Mockup.jpg" alt="">
+            </div>
+            <a href="https://mavidelaru.github.io/maps-location/" target="_blank" class="popup  popup-image"></a>
+            <div class="portfolio_hover">
+              <div class="title">
+                <h3>Form validation</h3>
+                <p>Javascript</p>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+
+
+        <div class="col-xl-4 col-md-6 col-lg-4">
+          <div class="single_Portfolio">
+            <div class="portfolio_thumb case4">
+              <img src="img/mockups/Mockup-location.jpg" alt="Location-Leaflet" />
+            </div>
+            <a href="https://mavidelaru.github.io/maps-location/" target="_blank" class="popup popup-image "></a>
+            <div class="portfolio_hover">
+              <div class="title">
+                <h3>Open source Leaflet </h3>
+                <p>Bootstrap + Javascript</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-xl-4 col-md-12 col-lg-4">
+          <div class="single_Portfolio">
+            <div class="portfolio_thumb case5">
+              <img src="img/mockups/mockup-rating.jpg" alt="Rating" />            </div>
+            <a href="https://mavidelaru.github.io/ratings" target="_blank" class="popup popup-image "></a>
+            <div class="portfolio_hover">
+              <div class="title">
+                <h3>Rating with stars </h3>
+                <p>SVG elements with Javascript</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!--
+                  <div class="col-xl-7 col-md-7">
+          <div class="single_Portfolio">
+            <div class="portfolio_thumb case5">
+              <img src="img/portfolio/2.png" alt="">
+            </div>
+            <a href="https://mavidelaru.github.io/ratings" target="_blank" class="popup  popup-image"></a>
+            <div class="portfolio_hover">
+              <div class="title">
+                <h3>Product Design</h3>
+                <p>jadhfjhfvklfjvl</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-5 col-md-5">
+          <div class="single_Portfolio">
+            <div class="portfolio_thumb case6">
+              <img src="img/portfolio/1.png" alt="">
+            </div>
+            <a href="img/portfolio/1.png" class="popup popup-image "></a>
+            <div class="portfolio_hover">
+              <div class="title">
+                <h3>Product Design</h3>
+                <p>jadhfjhfvklfjvl</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+-->
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- about_me  -->
+  <div class="about_me mt-5 ">
+
+    <div class="about_large_title d-none d-md-block section_title">
+      About me
+    </div>
+
+    <div class="container">
+      <div class="row align-items-center">
+
+        <div class="col-xl-6 col-md-7 case5">
+          <div class="about_e_details">
+            <h3 class="mb-5">Hey, it's me 
+              <span class="d-none d-md-inline-block
+              ">👋</span> </h3>
+
+            <p>
+              I’m Marta from Barcelona. I love to describe me as an Interactive Front-end
+              developer. My background in marketing and design made me learn the
+              importance of project and expectation management of various stakeholders in
+              the digital marketing business.
+            </p>
+
+            <p>Always having an
+              eye for
+              details, I like to resolve design and communication problems and imagine useful
+              interaction. While the initial dream remained, its application has changed.
+              I have unified my experience and capabilities to turn my passion into a Front-End Career.
+              Because designing something graphically has become developing visual experiences.</p>
+
+            <p> I bring
+              strong problem-solving
+              and analytical skills that have shown to improve websites and my creative approach
+              to front-end web development has yielded developing user friendly websites.</p>
+
+          </div>
+        </div>
+
+        <div class="col-xl-6 col-md-5 case1">
+          <div class="about_img">
+            <div class="my_Pic case3">
+              <img src="img/about/about.png" alt="">
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+
+    <!-- Skills  -->
+    <div id="skills" class="pb-4 pt-5 pl-5 pr-5">
+      <div class="row d-flex justify-content-center ">
+
+        <div class="d-flex col-5 col-sm-3 col-md-2 col-xl-1 m-2 m-md-3 m-xl-4  justify-content-center"
+          data-toggle="tooltip" data-placement="bottom" title="indesign">
+          <img src="img/iconoc/indesign.png" alt="indesign">
+        </div>
+
+        <div class="col-5 col-sm-3 col-md-2 col-xl-1 m-2 m-md-3 m-xl-4  d-flex justify-content-center"
+          data-toggle="tooltip" data-placement="bottom" title="Ilustrator">
+          <img src="img/iconoc/illustrator.png" alt="ilustrator">
+        </div>
+
+        <div class="col-5 col-sm-3 col-md-2 col-xl-1 m-2 m-md-3 m-xl-4  d-flex justify-content-center"
+          data-toggle="tooltip" data-placement="bottom" title="SKETCH">
+          <img src="img/iconoc/sketch_icon.png" alt="sketch">
+        </div>
+
+        <div class="col-5 col-sm-3 col-md-2 col-xl-1 m-2 m-md-3 m-xl-4  d-flex justify-content-center"
+          data-toggle="tooltip" data-placement="bottom" title="Html5">
+          <img src="img/iconoc/html-5.png" alt="html5">
+        </div>
+
+        <div class="col-5 col-sm-3 col-md-2 col-xl-1 m-2 m-md-3 m-xl-4  d-flex justify-content-center"
+          data-toggle="tooltip" data-placement="bottom" title="css">
+          <img src="img/iconoc/css.png" alt="css">
+        </div>
+
+        <div class="col-5 col-sm-3 col-md-2 col-xl-1 m-2 m-md-3 m-xl-4  d-flex justify-content-center"
+          data-toggle="tooltip" data-placement="bottom" title="Javascript">
+          <img src="img/iconoc/javascript.png" alt="Javascript">
+        </div>
+
+        <div class="col-5 col-sm-3 col-md-2 col-xl-1 m-2 m-md-3 m-xl-4  d-flex justify-content-center"
+          data-toggle="tooltip" data-placement="bottom" title="Sass">
+          <img src="img/iconoc/sass.png" alt="Sass">
+        </div>
+
+        <div class="col-5 col-sm-3 col-md-2 col-xl-1 m-2 m-md-3 m-xl-4  d-flex justify-content-center"
+          data-toggle="tooltip" data-placement="bottom" title="Adobe Photoshop">
+          <img src="img/iconoc/photoshop.png" alt="photoshop">
+        </div>
+
+        <div class="col-5 col-sm-3 col-md-2 col-xl-1 m-2 m-md-3 m-xl-4  d-flex justify-content-center"
+          data-toggle="tooltip" data-placement="bottom" title="Wordpress">
+          <img src="img/iconoc/wordpress.png" alt="Wordpress">
+        </div>
+
+        <div class="col-5 col-sm-3 col-md-2 col-xl-1 m-2 m-md-3 m-xl-4  d-flex justify-content-center"
+          data-toggle="tooltip" data-placement="bottom" title="Github">
+          <img src="img/iconoc/github.png" alt="Github">
+        </div>
+
+        <div class="col-5 col-sm-3 col-md-2 col-xl-1 m-2 m-md-3 m-xl-4  d-flex justify-content-center"
+          data-toggle="tooltip" data-placement="bottom" title="Jquery">
+          <img src="img/iconoc/jquery-icon.png" alt="Jquery">
+        </div>
+
+        <div class="col-5 col-sm-3 col-md-2 col-xl-1 m-2 m-md-3 m-xl-4  d-flex justify-content-center"
+          data-toggle="tooltip" data-placement="bottom" title="Typescript">
+          <img src="img/iconoc/typescript.png" alt="Typescript">
+        </div>
+
+        <div class="col-5 col-sm-3 col-md-2 col-xl-1 m-2 m-md-3 m-xl-4  d-flex justify-content-center"
+          data-toggle="tooltip" data-placement="bottom" title="bootstrap">
+          <img src="img/iconoc/bootstrap.png" alt="bootstrap">
+        </div>
+
+        <div class="col-5 col-sm-3 col-md-2 col-xl-1 m-2 m-md-3 m-xl-4  d-flex justify-content-center"
+          data-toggle="tooltip" data-placement="bottom" title="Angular">
+          <img src="img/iconoc/angular-icon.png" alt="Angular">
+        </div>
+
+        <div class="col-5 col-sm-3 col-md-2 col-xl-1 m-2 m-md-3 m-xl-4  d-flex justify-content-center"
+          data-toggle="tooltip" data-placement="bottom" title="Angular">
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+
+
+    <div class="col-12 pt-5 pb-5 mt-3" id="footer-aboutme">
+
+      <p >Do you want to know more about me or my work?</p>
+
+      <p> Or do you have a cool project that you want
+        me to dive into?</p>
+
+      <p> Send me an email or give me a call!</p>
+
+      
+      <a href="cv/Marta-Vidal-CV-E.pdf" download="Marta-Vidal-CV">
+
+      <button class="mt-4 mb-4" id="button-contact">
+       
+        Download CV
+
+        
+      </button>
+    </a>
+
+    </div>
+
+
+
+  </div>
+
 
 
 
@@ -147,6 +508,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="background.js"></script>
 
 </body>
 
