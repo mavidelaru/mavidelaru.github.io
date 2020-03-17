@@ -774,9 +774,9 @@ img {
 
 #down-green-stain {
   float: right;
-  width: 115vh;
+  width: 125vh;
   top: 40vh;
-  left: 145vh;
+  left: 130vh;
   animation: float 5s ease-in-out infinite;
 }
 
